@@ -1,0 +1,22 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+# Структура проекта
+
+- Точка входа: [Program.cs](mdc:Program.cs) — настройка сервисов, маршрутизация, запуск приложения, подключение SignalR-хабов.
+- Конфигурация: [appsettings.json](mdc:appsettings.json), [appsettings.Development.json](mdc:appsettings.Development.json) — параметры подключения к БД, логирование и др.
+- Описание зависимостей: [server.csproj](mdc:server.csproj)
+- SQL-дамп для тестовых данных: [demo_data.sql](mdc:demo_data.sql)
+- HTTP-запросы для тестирования: [server.http](mdc:server.http)
+- Параметры запуска: [Properties/launchSettings.json](mdc:Properties/launchSettings.json)
+
+## Основные директории
+- **Controllers/** — Web API-контроллеры (чаты, сообщения, пользователи, файлы, группы, роли, FAQ, прогноз погоды)
+- **DTOs/** — Data Transfer Objects для передачи данных между слоями
+- **Models/** — Модели данных и контекст БД (Entity Framework)
+- **Services/** — Сервисы бизнес-логики (например, UserService)
+- **Hubs/** — SignalR-хабы для чатов и статусов пользователей
+- **Mapping/** — (пусто) — предназначено для классов маппинга (AutoMapper)
+- **bin/**, **obj/**, **.vs/** — служебные директории .NET

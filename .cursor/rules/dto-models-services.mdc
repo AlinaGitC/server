@@ -1,0 +1,11 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+# DTOs, Models, Services, Hubs
+
+- **DTOs/** — классы для передачи данных между слоями (например, CreateChatDto, UserDto, MessageDto, FileDto и др.). Используются в контроллерах для валидации и сериализации.
+- **Models/** — сущности базы данных (Userr, Group, Chat, Message, File и др.), а также контекст [AppDbContext.cs](mdc:Models/AppDbContext.cs) для Entity Framework.
+- **Services/** — бизнес-логика, например, [UserService.cs](mdc:Services/UserService.cs) реализует регистрацию, аутентификацию и получение пользователей.
+- **Hubs/** — SignalR-хабы для обмена сообщениями и статусов онлайн ([ChatHub.cs](mdc:Hubs/ChatHub.cs), [UserStatusHub.cs](mdc:Hubs/UserStatusHub.cs)).

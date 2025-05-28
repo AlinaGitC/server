@@ -1,0 +1,15 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+# Контроллеры (Controllers)
+
+- [ChatController.cs](mdc:Controllers/ChatController.cs) — управление чатами: создание, получение чатов пользователя, добавление/удаление участников, смена ролей, получение участников, SignalR-уведомления.
+- [MessageController.cs](mdc:Controllers/MessageController.cs) — отправка и получение сообщений, поддержка файлов, интеграция с FAQ-ботом, SignalR-уведомления.
+- [UserController.cs](mdc:Controllers/UserController.cs) — регистрация, аутентификация, получение списка пользователей (использует UserService).
+- [FAQController.cs](mdc:Controllers/FAQController.cs) — получение FAQ, поиск ответа по вопросу, отправка ответа в чат через SignalR.
+- [FileController.cs](mdc:Controllers/FileController.cs) — загрузка и получение файлов (в т.ч. изображений).
+- [GroupController.cs](mdc:Controllers/GroupController.cs) — CRUD-группы, добавление/удаление чатов в группу, получение чатов и групп, SignalR-уведомления.
+- [ChatRoleController.cs](mdc:Controllers/ChatRoleController.cs) — CRUD ролей чата.
+- [WeatherForecastController.cs](mdc:Controllers/WeatherForecastController.cs) — пример контроллера для тестового прогноза погоды.
